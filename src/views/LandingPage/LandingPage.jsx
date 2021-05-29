@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import TopBlock from '../../components/TopBlock';
-import FirstSection from '../../components/FirstSection';
+import PlasticToPaper from '../../components/PlasticToPaper';
+import GenderFreeDesign from '../../components/GenderFreeDesign';
 import parallaxScrolling from '../../modules/parallaxScrolling';
 
 const Body = styled.div`
@@ -20,7 +21,8 @@ const LandingPage = () => {
   return (
     <Body>
       <TopBlock />
-      <FirstSection />
+      <PlasticToPaper />
+      <GenderFreeDesign />
     </Body>
   );
 };
