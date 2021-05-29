@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import logo from '../../assets/img/logo.png';
 import superQ1 from '../../assets/img/superQ1.png';
+import parallaxScrolling from '../../modules/parallaxScrolling';
 
 const Body = styled.div`
   padding: 28px;
@@ -51,12 +51,12 @@ const IntroPassage = styled.div`
   }
 `;
 
-const TopBlock = ({ registerParallaxElements }) => {
+const TopBlock = () => {
   const superQImage1Ref = useRef(null);
   const introRef = useRef(null);
 
   useEffect(() => {
-    registerParallaxElements([
+    parallaxScrolling.registerObservers([
       superQImage1Ref.current,
       introRef.current,
     ]);
@@ -114,14 +114,6 @@ const TopBlock = ({ registerParallaxElements }) => {
       </Intro>
     </Body>
   );
-};
-
-TopBlock.defaultProps = {
-  registerParallaxElements: () => {},
-};
-
-TopBlock.propTypes = {
-  registerParallaxElements: PropTypes.func,
 };
 
 export default TopBlock;
