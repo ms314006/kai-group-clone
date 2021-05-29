@@ -7,12 +7,13 @@ const Body = styled.div`
   width: 100vw;
   height: 900px;
   position: relative;
+  overflow: hidden;
   background: #D8D845;
 `;
 
 const SuperQImage = styled.img`
   position: absolute;
-  top: 0px;
+  top: -100px;
   left: calc(100vw / 2 - 620px);
   width: 800px;
 `;
@@ -28,7 +29,7 @@ const BackgroundText = styled.div`
   position: absolute;
   top: 132px;
   left: calc(100vw / 2 - 60px);
-  color: #00ead3;
+  color: #f7d6bf;
   font-size: 116px;
 `;
 
@@ -68,12 +69,6 @@ const IntroPassage = styled.div`
   & > .prompt {
     font-size: 12px;
   }
-
-  & > h3 {
-    margin-top: 32px;
-    font-size: 24px;
-    line-height: 40px;
-  }
 `;
 
 const PlasticToPaper = () => {
@@ -87,7 +82,7 @@ const PlasticToPaper = () => {
     <Body>
       <SuperQImage
         src={superQ1}
-        data-speed="0.08"
+        data-speed="0.1"
         ref={superQImageRef}
       />
       <SubTitle>

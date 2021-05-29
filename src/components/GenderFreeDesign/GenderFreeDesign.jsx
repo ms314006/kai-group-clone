@@ -5,15 +5,16 @@ import parallaxScrolling from '../../modules/parallaxScrolling';
 
 const Body = styled.div`
   width: 100vw;
-  height: 900px;
+  height: 1000px;
   position: relative;
+  overflow: hidden;
   background: #00D1D5;
 `;
 
 const SuperQImage = styled.img`
   position: absolute;
-  top: 0px;
-  left: calc(100vw / 2 - 620px);
+  top: -400px;
+  left: calc(100vw / 2);
   width: 800px;
 `;
 
@@ -27,15 +28,15 @@ const SubTitle = styled.div`
 const BackgroundText = styled.div`
   position: absolute;
   top: 132px;
-  left: calc(100vw / 2 - 60px);
-  color: #00ead3;
+  left: calc(100vw / 2 - 460px);
+  color: #f7d6bf;
   font-size: 116px;
 `;
 
 const Intro = styled.div`
   position: absolute;
-  top: 300px;
-  left: calc(100vw / 2);
+  top: 352px;
+  left: calc(100vw / 2 - 520px);
   color: #222222;
 
   & > h1 {
@@ -47,14 +48,6 @@ const Intro = styled.div`
 const IntroPassage = styled.div`
   margin-top: ${(props) => props.marginTop}px;
 
-  & > ul {
-    font-size: 16px;
-
-    & > li {
-      margin: 8px 0px;
-    }
-  }
-
   & > div {
     width: 600px;
     column-width: 240px;
@@ -63,10 +56,6 @@ const IntroPassage = styled.div`
       font-size: 14px;
       line-height: 28px;
     }
-  }
-
-  & > .prompt {
-    font-size: 12px;
   }
 
   & > h3 {
@@ -87,47 +76,37 @@ const GenderFreeDesign = () => {
     <Body>
       <SuperQImage
         src={superQ1}
-        data-speed="0.08"
+        data-speed="0.2"
         ref={superQImageRef}
       />
       <SubTitle>
-        01&nbsp;&nbsp;PLASTIC&nbsp;&nbsp;TO&nbsp;&nbsp;PAPER
+        02&nbsp;&nbsp;GENDER&nbsp;&nbsp;FREE&nbsp;&nbsp;DESIGN
       </SubTitle>
       <BackgroundText>
-        PLASTIC
+        GENDER
         <br />
-        TO
+        FREE
         <br />
-        PAPER
+        DESIGN
       </BackgroundText>
       <Intro>
         <h1>
-          プラスチックから
+          ジェンダーフリーな
           <br />
-          「紙」へシフト。
+          デザイン。
         </h1>
         <IntroPassage marginTop={40}>
-          <ul>
-            <li>• カミソリを脱プラスチック※なアイテムへ。</li>
-            <li>• 使い切りだからいつでも清潔で快適。</li>
-            <li>• 本体薄さ3mmで薄くて軽いから、手軽に持ち運びできます。</li>
-          </ul>
+          <h3>シンプルで、手に取りやすい形。</h3>
         </IntroPassage>
         <IntroPassage marginTop={40}>
           <div>
             <p>
-              ハンドルに紙、刃体（ヘッド部含む）に金属を使用し、“脱プラスチック※”を実現。
-              モノづくりを通してできるエコな取り組みのひとつとして、プラスチック排出量を減らすための一助になればと考えています。
-              折り紙のように、一枚の紙を組み立てて使う約3mmの薄型の本体は、重さ約4gと超軽量。薄くて軽いから、バッグにサッと入れて、
-              手軽に持ち運べます。紙の材質には、耐水性と剃る時の安定感を兼ね備え、組み立てやすい程よい厚みのものを厳選しました。
-              1回使い切りなので、細菌の繁殖やサビの心配がなく、いつでも清潔で快適に使用できます。
+              すべての人に手に取ってほしいから、デザインは、とにかくシンプルに。
+              カミソリらしいおなじみのT型のフォルムをベースに、シャープすぎず、柔らかすぎないフォルムで。
+              紙の強度や厚み、持ち手の長さは、みんなにちょうどいいサイズ感に。誰にでもすんなりと、違和感なく手に取っていただけます。
+              パッと見て“紙”と分かるクラフト色、表面には発色の良いカラーをプリント。性別も年齢も限定しない、いつでもどこでも使える、ニュートラルな見た目と使い心地です。
             </p>
           </div>
-        </IntroPassage>
-        <IntroPassage marginTop={20}>
-          <span class="prompt">
-            ※ 当社製3枚刃カミソリとの比較で98％のプラスチック部分を削減
-          </span>
         </IntroPassage>
       </Intro>
     </Body>
