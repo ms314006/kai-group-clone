@@ -80,31 +80,36 @@ const GenderFreeDesign = () => {
         ref={superQImageRef}
       />
       <SubTitle>
-        02&nbsp;&nbsp;GENDER&nbsp;&nbsp;FREE&nbsp;&nbsp;DESIGN
+        02&nbsp;&nbsp;OOOOOO&nbsp;&nbsp;OOOO&nbsp;&nbsp;OOOOOO
       </SubTitle>
       <BackgroundText>
-        GENDER
+        OOOOOO
         <br />
-        FREE
+        OOOO
         <br />
-        DESIGN
+        OOOOOO
       </BackgroundText>
       <Intro>
         <h1>
-          ジェンダーフリーな
+          XXXXXXXXXXXXXXX
           <br />
-          デザイン。
+          XXXXXXX。
         </h1>
         <IntroPassage marginTop={40}>
-          <h3>シンプルで、手に取りやすい形。</h3>
+          <h3>XXXXXXXXXXXXXXXXXXXXXXX。</h3>
         </IntroPassage>
         <IntroPassage marginTop={40}>
           <div>
             <p>
-              すべての人に手に取ってほしいから、デザインは、とにかくシンプルに。
-              カミソリらしいおなじみのT型のフォルムをベースに、シャープすぎず、柔らかすぎないフォルムで。
-              紙の強度や厚み、持ち手の長さは、みんなにちょうどいいサイズ感に。誰にでもすんなりと、違和感なく手に取っていただけます。
-              パッと見て“紙”と分かるクラフト色、表面には発色の良いカラーをプリント。性別も年齢も限定しない、いつでもどこでも使える、ニュートラルな見た目と使い心地です。
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
             </p>
           </div>
         </IntroPassage>

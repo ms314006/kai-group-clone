@@ -75,40 +75,40 @@ const TopBlock = () => {
         ref={introRef}
       >
         <h1>
-          剃るまえから、
+          XXXXXXX
           <div style={{ marginTop: 32 }}>
-            心地いい。
+          XXXX
           </div>
         </h1>
         <IntroPassage marginTop="100">
-          <p>自分らしく、選べる自由。</p>
+          <p>XXXX，XXXXXXXXX</p>
           <h3>
-            貝印の紙カミソリ™
+            XXXXXXXXX。
           </h3>
         </IntroPassage>
         <IntroPassage marginTop="280">
           <h3>
-            日々の暮らしを、もっと心地よく。
+            XXXXXXXXXXXXXXXXXXXXXX
             <br />
-            紙カミソリ™と作る、明日の私。
+            XXXXXXXXXXXXXXXXXXXXX
           </h3>
           <p>
-            これまで主流だったプラスチック製カミソリとは一線を画す、
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             <br />
-            紙と金属でできた世界初の「紙カミソリ™」。
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
           </p>
           <p>
-            1回使い切りで気持ちよく、日々にやさしく寄り添えるカミソリを作りたい…
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             <br />
-            そんな想いから生まれました。
+            XXXXXXXXXXXXXXXXXXXXXX
           </p>
           <p>
-            刃物を100年以上作り続けてきたからこそ、
+            XXXXXXXXXXXXXXXXXXXXXXXXXXX
             <br />
-            今もこれからも、あなたのそばに。
+            XXXXXXXXXXX
           </p>
           <p>
-            “当たり前”のその先に、紙カミソリ™という選択肢を。
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
           </p>
         </IntroPassage>
       </Intro>

@@ -86,42 +86,46 @@ const PlasticToPaper = () => {
         ref={superQImageRef}
       />
       <SubTitle>
-        01&nbsp;&nbsp;PLASTIC&nbsp;&nbsp;TO&nbsp;&nbsp;PAPER
+        01&nbsp;&nbsp;OOOOOOO&nbsp;&nbsp;OO&nbsp;&nbsp;OOOOO
       </SubTitle>
       <BackgroundText>
-        PLASTIC
+        OOOOOOO
         <br />
-        TO
+        OO
         <br />
-        PAPER
+        OOOOO
       </BackgroundText>
       <Intro>
         <h1>
-          プラスチックから
+          XXXXXXXXXXXXX
           <br />
-          「紙」へシフト。
+          XXXXXXXXXX
         </h1>
         <IntroPassage marginTop={40}>
           <ul>
-            <li>• カミソリを脱プラスチック※なアイテムへ。</li>
-            <li>• 使い切りだからいつでも清潔で快適。</li>
-            <li>• 本体薄さ3mmで薄くて軽いから、手軽に持ち運びできます。</li>
+            <li>• XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。</li>
+            <li>• XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。</li>
+            <li>• XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。</li>
           </ul>
         </IntroPassage>
         <IntroPassage marginTop={40}>
           <div>
             <p>
-              ハンドルに紙、刃体（ヘッド部含む）に金属を使用し、“脱プラスチック※”を実現。
-              モノづくりを通してできるエコな取り組みのひとつとして、プラスチック排出量を減らすための一助になればと考えています。
-              折り紙のように、一枚の紙を組み立てて使う約3mmの薄型の本体は、重さ約4gと超軽量。薄くて軽いから、バッグにサッと入れて、
-              手軽に持ち運べます。紙の材質には、耐水性と剃る時の安定感を兼ね備え、組み立てやすい程よい厚みのものを厳選しました。
-              1回使い切りなので、細菌の繁殖やサビの心配がなく、いつでも清潔で快適に使用できます。
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
             </p>
           </div>
         </IntroPassage>
         <IntroPassage marginTop={20}>
           <span class="prompt">
-            ※ 当社製3枚刃カミソリとの比較で98％のプラスチック部分を削減
+            ※ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
           </span>
         </IntroPassage>
       </Intro>
