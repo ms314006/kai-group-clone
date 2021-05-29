@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack -p",
-    "eslintinit": "eslint --init"
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
