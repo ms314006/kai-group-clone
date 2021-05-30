@@ -6,6 +6,7 @@ import GenderFreeDesign from '../../components/GenderFreeDesign';
 import News from '../../components/News';
 import HowToSetUp from '../../components/HowToSetUp';
 import ShowProducts from '../../components/ShowProducts';
+import NewChoices from '../../components/NewChoices';
 import parallaxScrolling from '../../modules/parallaxScrolling';
 
 const Body = styled.div`
@@ -29,6 +30,7 @@ const LandingPage = () => {
       <News />
       <HowToSetUp />
       <ShowProducts />
+      <NewChoices />
     </Body>
   );
 };
