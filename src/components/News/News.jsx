@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClone } from '@fortawesome/free-solid-svg-icons'
+import { faClone } from '@fortawesome/free-regular-svg-icons'
 import logo from '../../assets/img/logo.png';
 
 const Body = styled.div`
@@ -37,23 +37,33 @@ const New = styled.div`
     width: 24px;
     height: 24px;
     grid-area: icon;
-    color: #707070;
+    background: #707070;
+    color: #fff;
+    padding: 6px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    & > .linkIcon {
+      background: #343434;
+    }
   }
 `;
 
 const News = () => (
   <Body>
     <New>
-      <img class="img" src={logo} />
-      <div class="title">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
-      <FontAwesomeIcon class="linkIcon" icon={faClone} />
+      <img className="img" src={logo} />
+      <div className="title">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+      <FontAwesomeIcon className="linkIcon" icon={faClone} />
     </New>
     <New>
-      <img class="img" src={logo} />
-      <div class="title">
+      <img className="img" src={logo} />
+      <div className="title">
         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，XXXXXXXXXXXXXXXXXXXXXXXX
       </div>
-      <FontAwesomeIcon class="linkIcon" icon={faClone} />
+      <FontAwesomeIcon className="linkIcon" icon={faClone} />
     </New>
   </Body>
 );

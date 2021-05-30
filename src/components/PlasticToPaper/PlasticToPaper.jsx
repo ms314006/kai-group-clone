@@ -124,7 +124,7 @@ const PlasticToPaper = () => {
           </div>
         </IntroPassage>
         <IntroPassage marginTop={20}>
-          <span class="prompt">
+          <span className="prompt">
             ※ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
           </span>
         </IntroPassage>
