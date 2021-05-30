@@ -5,6 +5,7 @@ import PlasticToPaper from '../../components/PlasticToPaper';
 import GenderFreeDesign from '../../components/GenderFreeDesign';
 import News from '../../components/News';
 import HowToSetUp from '../../components/HowToSetUp';
+import ShowProducts from '../../components/ShowProducts';
 import parallaxScrolling from '../../modules/parallaxScrolling';
 
 const Body = styled.div`
@@ -27,6 +28,7 @@ const LandingPage = () => {
       <GenderFreeDesign />
       <News />
       <HowToSetUp />
+      <ShowProducts />
     </Body>
   );
 };
