@@ -10,9 +10,11 @@ class ParallaxScrolling {
   transformObserversPositionY() {
     const scrollPositionY = window.pageYOffset;
     this.observers.forEach((element) => {
-      const scrollMoveSpeed = element.dataset.speed;
-      // eslint-disable-next-line no-param-reassign
-      element.style.transform = `translateY(${scrollPositionY * scrollMoveSpeed}px)`;
+      if (element) {
+        const scrollMoveSpeed = element.dataset.speed;
+        // eslint-disable-next-line no-param-reassign
+        element.style.transform = `translateY(${scrollPositionY * scrollMoveSpeed}px)`;
+      }
     });
   }
 }

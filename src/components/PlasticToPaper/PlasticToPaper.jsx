@@ -23,6 +23,7 @@ const SubTitle = styled.div`
   top: 140px;
   font-size: 14px;
   transform: rotate(90deg);
+  color: #242424;
 `;
 
 const BackgroundText = styled.div`
