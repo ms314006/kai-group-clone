@@ -7,6 +7,7 @@ import News from '../../components/News';
 import HowToSetUp from '../../components/HowToSetUp';
 import ShowProducts from '../../components/ShowProducts';
 import NewChoices from '../../components/NewChoices';
+import FAQ from '../../components/FAQ';
 import parallaxScrolling from '../../modules/parallaxScrolling';
 
 const Body = styled.div`
@@ -31,6 +32,7 @@ const LandingPage = () => {
       <HowToSetUp />
       <ShowProducts />
       <NewChoices />
+      <FAQ />
     </Body>
   );
 };
