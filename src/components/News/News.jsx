@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClone } from '@fortawesome/free-regular-svg-icons';
-import logo from '../../assets/img/logo.png';
+import logoBlack from '../../assets/img/logo-black.png';
 
 const Body = styled.div`
   height: 260px;
@@ -54,12 +54,12 @@ const New = styled.div`
 const News = () => (
   <Body>
     <New>
-      <img className="img" src={logo} />
+      <img className="img" src={logoBlack} />
       <div className="title">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
       <FontAwesomeIcon className="linkIcon" icon={faClone} />
     </New>
     <New>
-      <img className="img" src={logo} />
+      <img className="img" src={logoBlack} />
       <div className="title">
         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，XXXXXXXXXXXXXXXXXXXXXXXX
       </div>

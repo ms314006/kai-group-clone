@@ -15,7 +15,7 @@ const Body = styled.div`
 
 const SuperQImage = styled.img`
   position: absolute;
-  top: -1300px;
+  top: -650px;
   left: calc(100vw / 2);
   width: 700px;
 `;
@@ -82,7 +82,7 @@ const TryIt = () => {
     <Body>
       <SuperQImage
         src={superQ1}
-        data-speed="0.2"
+        data-speed="0.1"
         ref={superQImageRef}
       />
       <SubTitle>
