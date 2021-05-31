@@ -7,7 +7,7 @@ import logoBlack from '../../assets/img/logo-black.png';
 const Body = styled.div`
   height: 260px;
   width: 100vw;
-  background: #e5e5e5;
+  background: #f5f5f5;
 `;
 
 const New = styled.div`
