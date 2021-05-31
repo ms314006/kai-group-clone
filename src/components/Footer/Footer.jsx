@@ -54,9 +54,9 @@ const Footer = () => (
       <Copyright>
         <img className="img" src={logoBlack} />
         <div className="text">
-          Copyright © xxxxxxxxxxxxxxxxxxxx co., ltd.
+          xxxxxxx © xxxxxxxxxxxxxxxxxxxx xx., xxx.
           <br />
-          All Rights Reserved.
+          xxx xxxxxx xxxxxxxx.
         </div>
       </Copyright>
     </Content>
