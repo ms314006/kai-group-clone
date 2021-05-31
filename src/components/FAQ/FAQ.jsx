@@ -4,7 +4,7 @@ import Question from './Question';
 
 const Body = styled.div`
   width: 100vw;
-  padding: 140px 0px;
+  padding: 120px 0px;
   position: relative;
   overflow: hidden;
   background: #fff;
