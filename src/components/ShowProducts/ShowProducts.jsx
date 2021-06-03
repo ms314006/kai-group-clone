@@ -8,12 +8,16 @@ const Body = styled.div`
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-areas: "left right";
+  grid-template-areas: "first second";
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 980px) {
+    height: 400px;
+  }
 `;
 
-const LeftAnimation = styled.div`
-  grid-area: left;
+const FirstAnimation = styled.div`
+  grid-area: first;
 
   & > div {
     display: flex;
@@ -43,10 +47,16 @@ const LeftAnimation = styled.div`
     background: #0075db;
     top: -800px;
   }
+
+  @media (max-width: 980px) {
+    & > div > img {
+      height: 400px;
+    }
+  }
 `;
 
-const RightAnimation = styled.div`
-  grid-area: right;
+const SecondAnimation = styled.div`
+  grid-area: second;
 
   & > div {
     display: flex;
@@ -76,6 +86,12 @@ const RightAnimation = styled.div`
     background: #f5f5f5;
     top: 0px;
   }
+
+  @media (max-width: 980px) {
+    & > div > img {
+      height: 400px;
+    }
+  }
 `;
 
 const SuperQImage = styled.img`
@@ -83,52 +99,52 @@ const SuperQImage = styled.img`
 `;
 
 const ShowProducts = () => {
-  const leftImage1 = useRef(null);
-  const leftImage2 = useRef(null);
-  const leftImage3 = useRef(null);
-  const leftImage4 = useRef(null);
-  const rightImage1 = useRef(null);
-  const rightImage2 = useRef(null);
-  const rightImage3 = useRef(null);
-  const rightImage4 = useRef(null);
+  const firstImage1 = useRef(null);
+  const firstImage2 = useRef(null);
+  const firstImage3 = useRef(null);
+  const firstImage4 = useRef(null);
+  const secondImage1 = useRef(null);
+  const secondImage2 = useRef(null);
+  const secondImage3 = useRef(null);
+  const secondImage4 = useRef(null);
 
   useEffect(() => {
-    const rightImages = [rightImage1, rightImage2, rightImage3, rightImage4];
-    const leftImages = [leftImage1, leftImage2, leftImage3, leftImage4];
+    const secondImages = [secondImage1, secondImage2, secondImage3, secondImage4];
+    const firstImages = [firstImage1, firstImage2, firstImage3, firstImage4];
 
     for (let imageIndex = 0; imageIndex < 4; imageIndex += 1) {
       setTimeout(() => {
         setInterval(() => {
-          const leftImage = leftImages[imageIndex].current;
-          const previousLeftImage = leftImages[imageIndex === 0 ? 3 : imageIndex - 1].current;
-          previousLeftImage.style.zIndex = 2;
-          const rightImage = rightImages[imageIndex].current;
-          const previousRightImage = rightImages[imageIndex === 0 ? 3 : imageIndex - 1].current;
-          previousRightImage.style.zIndex = 2;
+          const firstImage = firstImages[imageIndex].current;
+          const previousFirstImage = firstImages[imageIndex === 0 ? 3 : imageIndex - 1].current;
+          previousFirstImage.style.zIndex = 2;
+          const secondImage = secondImages[imageIndex].current;
+          const previousSecondImage = secondImages[imageIndex === 0 ? 3 : imageIndex - 1].current;
+          previousSecondImage.style.zIndex = 2;
 
-          leftImages.forEach(({ current: otherImage }) => {
-            if (otherImage !== leftImage && otherImage !== previousLeftImage) {
+          firstImages.forEach(({ current: otherImage }) => {
+            if (otherImage !== firstImage && otherImage !== previousFirstImage) {
               otherImage.style.zIndex = 1;
-              leftImage.style.top = -800;
+              firstImage.style.top = -800;
             }
           });
-          rightImages.forEach(({ current: otherImage }) => {
-            if (otherImage !== rightImage && otherImage !== previousRightImage) {
+          secondImages.forEach(({ current: otherImage }) => {
+            if (otherImage !== secondImage && otherImage !== previousSecondImage) {
               otherImage.style.zIndex = 1;
-              rightImage.style.top = -800;
+              secondImage.style.top = -800;
             }
           });
-          leftImage.style.zIndex = 3;
-          rightImage.style.zIndex = 3;
-          let leftImageTop = -800;
-          let rightImageTop = 800;
+          firstImage.style.zIndex = 3;
+          secondImage.style.zIndex = 3;
+          let firstImageTop = -800;
+          let secondImageTop = 800;
           const dropImageInterval = setInterval(() => {
-            leftImageTop += 5;
-            leftImage.style.top = leftImageTop;
+            firstImageTop += 5;
+            firstImage.style.top = firstImageTop;
 
-            rightImageTop -= 5;
-            rightImage.style.top = rightImageTop;
-            if (leftImageTop === 0 && rightImageTop === 0) {
+            secondImageTop -= 5;
+            secondImage.style.top = secondImageTop;
+            if (firstImageTop === 0 && secondImageTop === 0) {
               clearInterval(dropImageInterval);
             }
           }, 1);
@@ -139,35 +155,35 @@ const ShowProducts = () => {
 
   return (
     <Body>
-      <LeftAnimation>
-        <div ref={leftImage1}>
+      <FirstAnimation>
+        <div ref={firstImage1}>
           <SuperQImage src={superQ1} />
         </div>
-        <div ref={leftImage2}>
+        <div ref={firstImage2}>
           <SuperQImage src={superQ1} />
         </div>
-        <div ref={leftImage3}>
+        <div ref={firstImage3}>
           <SuperQImage src={superQ1} />
         </div>
-        <div ref={leftImage4}>
+        <div ref={firstImage4}>
           <SuperQImage src={superQ1} />
         </div>
-      </LeftAnimation>
+      </FirstAnimation>
       <div>
-      <RightAnimation>
-        <div ref={rightImage1}>
+      <SecondAnimation>
+        <div ref={secondImage1}>
           <SuperQImage src={superQ1} />
         </div>
-        <div ref={rightImage2}>
+        <div ref={secondImage2}>
           <SuperQImage src={superQ1} />
         </div>
-        <div ref={rightImage3}>
+        <div ref={secondImage3}>
           <SuperQImage src={superQ1} />
         </div>
-        <div ref={rightImage4}>
+        <div ref={secondImage4}>
           <SuperQImage src={superQ1} />
         </div>
-      </RightAnimation>
+      </SecondAnimation>
       </div>
     </Body>
   );

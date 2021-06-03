@@ -23,6 +23,16 @@ const SuperQImage1 = styled.img`
   top: 120px;
   right: calc(100vw / 2 - 480px);
   width: 800px;
+
+  @media (max-width: 1400px) {
+    right: calc(100vw / 2 - 420px);
+    width: 800px;
+  }
+
+  @media (max-width: 980px) {
+    right: calc(100vw / 2 - 320px);
+    width: 600px;
+  }
 `;
 
 const Intro = styled.div`
@@ -33,6 +43,15 @@ const Intro = styled.div`
 
   & > h1 {
     font-size: 64px;
+  }
+
+  @media (max-width: 1400px) {
+    right: calc(100vw / 2 - 200px);
+  }
+
+  @media (max-width: 980px) {
+    top: 480px;
+    right: calc(100vw / 2 - 400px);
   }
 `;
 

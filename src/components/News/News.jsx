@@ -8,6 +8,12 @@ const Body = styled.div`
   height: 260px;
   width: 100vw;
   background: #f5f5f5;
+
+  @media (max-width: 980px) {
+    padding: 40px 40px 20px 40px;
+    box-sizing: border-box;
+    height: auto;
+  }
 `;
 
 const New = styled.div`
@@ -49,19 +55,45 @@ const New = styled.div`
       background: #343434;
     }
   }
+
+  @media (max-width: 980px) {
+    height: auto;
+    grid-template-areas:
+      "image icon"
+      "title title";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 1fr;
+    row-gap: 20px;
+    align-items: start;
+    padding: 0px;
+    margin-bottom: 20px; 
+
+    & > .img {
+      height: 120px;
+    }
+
+    & > .title {
+      font-size: 26px;
+    }
+
+    & > .linkIcon {
+      position: absolute;
+      right: 40px;
+    }
+  }
 `;
 
 const News = () => (
   <Body>
     <New>
       <img className="img" src={logoBlack} />
-      <div className="title">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+      <div className="title">XXXXXXXXX，XXXXXXXXXXX，XXXXXXXXXXXX，XXXXXXXXXXXX</div>
       <FontAwesomeIcon className="linkIcon" icon={faClone} />
     </New>
     <New>
       <img className="img" src={logoBlack} />
       <div className="title">
-        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX，XXXXXXXXXXXXXXXXXXXXXXXX
+        XXXXXXXXXXXXXX，XXXXXXX，XXXXXXXXXXXXX，XXXXXXXX，XXXXXXXXXXXXXXXX
       </div>
       <FontAwesomeIcon className="linkIcon" icon={faClone} />
     </New>

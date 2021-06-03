@@ -7,6 +7,10 @@ const Body = styled.div`
   position: relative;
   overflow: hidden;
   background: #fff;
+
+  @media (max-width: 980px) {
+    height: 764px;
+  }
 `;
 
 const Content = styled.div`
@@ -15,6 +19,23 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & > .iframeContainer {
+    width: 760px;
+    height: 428px;
+
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 980px) {
+    & > .iframeContainer {
+      width: 560px;
+      height: 328px;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -22,6 +43,12 @@ const Title = styled.div`
   margin-top: 140px;
   margin-bottom: 100px;
   font-size: 56px;
+
+  @media (max-width: 980px) {
+    margin-left: 36px;
+    width: 600px;
+    font-size: 56px;
+  }
 `;
 
 const SubTitle = styled.div`
@@ -30,6 +57,10 @@ const SubTitle = styled.div`
   font-size: 14px;
   transform: rotate(90deg);
   color: 7a7a7a;
+
+  @media (max-width: 980px) {
+    right: -10px;
+  }
 `;
 
 const HowToSetUp = () => (
@@ -39,17 +70,17 @@ const HowToSetUp = () => (
     </SubTitle>
     <Content>
       <Title>
-        XXXXXXXXXXXXXXXXXXX
+        XXXXXX XXXXX XXXXXX
       </Title>
-      <iframe
-        width="760"
-        height="428"
-        src="https://www.youtube.com/embed/TUD9999TbS0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
+      <div class="iframeContainer">
+        <iframe
+          src="https://www.youtube.com/embed/TUD9999TbS0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
     </Content>
   </Body>
 );
