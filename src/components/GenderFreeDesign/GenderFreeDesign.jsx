@@ -11,7 +11,7 @@ const Body = styled.div`
   background: #00D1D5;
 
   @media (max-width: 980px) {
-    height: 1600px;
+    height: 1680px;
   }
 `;
 
@@ -108,8 +108,7 @@ const IntroPassage = styled.div`
       column-width: 400px;
   
       & > p {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 20px;
       }
     }
   }
