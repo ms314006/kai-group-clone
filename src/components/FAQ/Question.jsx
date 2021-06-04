@@ -8,6 +8,10 @@ const Body = styled.div`
   color: #707070;
   font-size: 14px;
   margin-bottom: 42px;
+
+  @media (max-width: 980px) {
+    font-size: 24px;
+  }
 `;
 
 const Question = styled.div`
@@ -30,6 +34,15 @@ const Question = styled.div`
     border-radius: 25px;
     box-sizing: border-box;
   }
+
+  @media (max-width: 980px) {
+    width: 500px;
+    margin: 0px auto;
+    & > .icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
 `;
 
 const Answer = styled.div`
@@ -39,6 +52,16 @@ const Answer = styled.div`
 
   & > div {
     margin: 20px 79px 0px 0px;
+  }
+
+  @media (max-width: 980px) {
+    max-height: ${(props) => props.open ? '180' : '0'}px;
+    width: 500px;
+    margin: 0px auto;
+
+    & > div {
+      margin: 20px 20px 0px 0px;
+    }
   }
 `;
 
@@ -56,9 +79,9 @@ export default () => {
       </Question>
       <Answer open={open}>
         <div>
-          XXXXXXXXXXXXXXXXXXXXXXXX
+          XXXXXXXXXXXXX，XXXXXXXXXXX
           <br />
-          XXXXXXXXXXXXXXXXXXXXXXXXXX。XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
+          XXXXXXXXXX，XXXXXXXXXXXXXXXX。XXXXXXXXXXXXXX，XXXXXXXXXXXXXXXXXXX。
         </div>
       </Answer>
     </Body>

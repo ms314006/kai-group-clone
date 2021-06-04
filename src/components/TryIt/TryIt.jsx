@@ -11,6 +11,10 @@ const Body = styled.div`
   position: relative;
   overflow: hidden;
   background: #ef4245;
+
+  @media (max-width: 980px) {
+    height: 1180px;
+  }
 `;
 
 const SuperQImage = styled.img`
@@ -18,6 +22,17 @@ const SuperQImage = styled.img`
   top: -650px;
   left: calc(100vw / 2);
   width: 700px;
+
+  @media (max-width: 1400px) {
+    left: calc(100vw / 2 - 100px);
+    width: 720px;
+  }
+
+  @media (max-width: 980px) {
+    top: -860px;
+    left: calc(100vw / 2 - 285px);
+    width: 600px;
+  }
 `;
 
 const SubTitle = styled.div`
@@ -39,6 +54,16 @@ const Intro = styled.div`
     font-size: 52px;
     line-height: 84px;
   }
+
+  @media (max-width: 1400px) {
+    top: 164px;
+    left: calc(100vw / 2 - 360px);
+  }
+
+  @media (max-width: 980px) {
+    top: 564px;
+    left: calc(100vw / 2 - 250px);
+  }
 `;
 
 const IntroPassage = styled.div`
@@ -53,6 +78,16 @@ const IntroPassage = styled.div`
     margin-top: 32px;
     font-size: 24px;
     line-height: 40px;
+  }
+
+  @media (max-width: 980px) {
+    & > h3 {
+      font-size: 30px;
+    }
+
+    & > p {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -69,6 +104,13 @@ const BuyButton = styled.a`
   border-radius: 3px;
   padding: 21px 20px 21px 30px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+
+  @media (max-width: 980px) {
+    font-size: 32px;
+    margin: 40px auto 0px auto;
+    width: 460px;
+    height: 80px;
+  }
 `; 
 
 const TryIt = () => {

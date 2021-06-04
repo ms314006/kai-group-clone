@@ -17,6 +17,10 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 980px) {
+    height: 760px;
+  }
 `;
 
 const Images = styled.div`
@@ -25,6 +29,15 @@ const Images = styled.div`
   & > .img {
     height: 100px;
     margin: 0px 8px;
+  }
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+
+    & > .img {
+      height: 180px;
+      margin: 16px 0px;
+    }
   }
 `;
 
@@ -40,6 +53,16 @@ const Copyright = styled.div`
   & > .text {
     line-height: 1.5;
     font-size: 12px;
+  }
+
+  @media (max-width: 980px) {
+    & > .img {
+      width: 126px;
+    }
+
+    & > .text {
+      font-size: 24px;
+    }
   }
 `;
 

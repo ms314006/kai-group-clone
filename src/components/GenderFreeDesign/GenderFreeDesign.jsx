@@ -106,7 +106,15 @@ const IntroPassage = styled.div`
     & > div {
       width: 400px;
       column-width: 400px;
-  
+    }
+  }
+
+  @media (max-width: 980px) {
+    & > h3 {
+      font-size: 30px;
+    }
+
+    & > div {
       & > p {
         font-size: 20px;
       }

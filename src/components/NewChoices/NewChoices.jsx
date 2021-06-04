@@ -9,6 +9,10 @@ const Body = styled.div`
   position: relative;
   overflow: hidden;
   background: #d9d9d9;
+
+  @media (max-width: 980px) {
+    height: 1580px;
+  }
 `;
 
 const SuperQImage = styled.img`
@@ -16,6 +20,17 @@ const SuperQImage = styled.img`
   top: -960px;
   left: calc(100vw / 2);
   width: 800px;
+
+  @media (max-width: 1400px) {
+    left: calc(100vw / 2);
+    width: 720px;
+  }
+
+  @media (max-width: 980px) {
+    top: -1160px;
+    left: calc(100vw / 2 - 285px);
+    width: 600px;
+  }
 `;
 
 const SubTitle = styled.div`
@@ -32,6 +47,17 @@ const BackgroundText = styled.div`
   left: calc(100vw / 2 - 560px);
   color: #f7d6bf;
   font-size: 116px;
+
+  @media (max-width: 1400px) {
+    top: 122px;
+    left: calc(100vw / 2 - 400px);
+    font-size: 108px;
+  }
+
+  @media (max-width: 980px) {
+    top: 620px;
+    left: calc(100vw / 2 - 260px);
+  }
 `;
 
 const Intro = styled.div`
@@ -44,6 +70,16 @@ const Intro = styled.div`
     margin-top: 40px;
     font-size: 52px;
     line-height: 84px;
+  }
+
+  @media (max-width: 1400px) {
+    left: calc(100vw / 2 - 360px);
+    top: 200px;
+  }
+
+  @media (max-width: 980px) {
+    top: 860px;
+    left: calc(100vw / 2 - 250px);
   }
 `;
 
@@ -59,6 +95,16 @@ const IntroPassage = styled.div`
     margin-top: 32px;
     font-size: 24px;
     line-height: 40px;
+  }
+
+  @media (max-width: 980px) {
+    & > h3 {
+      font-size: 30px;
+    }
+
+    & > p {
+      font-size: 20px;
+    }
   }
 `;
 

@@ -47,12 +47,6 @@ const FirstAnimation = styled.div`
     background: #0075db;
     top: -800px;
   }
-
-  @media (max-width: 980px) {
-    & > div > img {
-      height: 400px;
-    }
-  }
 `;
 
 const SecondAnimation = styled.div`
@@ -86,16 +80,14 @@ const SecondAnimation = styled.div`
     background: #f5f5f5;
     top: 0px;
   }
-
-  @media (max-width: 980px) {
-    & > div > img {
-      height: 400px;
-    }
-  }
 `;
 
 const SuperQImage = styled.img`
   width: 600px;
+
+  @media (max-width: 980px) {
+    width: 320px;
+  }
 `;
 
 const ShowProducts = () => {
