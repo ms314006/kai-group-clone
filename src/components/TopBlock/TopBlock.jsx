@@ -12,6 +12,10 @@ const Body = styled.div`
   overflow: hidden;
   position: relative;
   background: #0076d7;
+
+  @media (max-width: 980px) {
+    height: 1640px;
+  }
 `;
 
 const Logo = styled.img`
@@ -38,7 +42,7 @@ const SuperQImage1 = styled.img`
 const Intro = styled.div`
   position: absolute;
   top: 260px;
-  right: calc(100vw / 2);
+  right: calc(100vw / 2 + 200px);
   color: #f7d6bf;
 
   & > h1 {
@@ -46,12 +50,12 @@ const Intro = styled.div`
   }
 
   @media (max-width: 1400px) {
-    right: calc(100vw / 2 - 200px);
+    right: calc(100vw / 2);
   }
 
   @media (max-width: 980px) {
     top: 480px;
-    right: calc(100vw / 2 - 400px);
+    right: calc(100vw / 2 - 220px);
   }
 `;
 
@@ -67,6 +71,16 @@ const IntroPassage = styled.div`
     margin-top: 32px;
     font-size: 24px;
     line-height: 40px;
+  }
+
+  @media (max-width: 980px) {
+    & > h3 {
+      font-size: 30px;
+    }
+
+    & > p {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -112,12 +126,12 @@ const TopBlock = () => {
             XXXXXXXXXXXXXXXXXXXXX
           </h3>
           <p>
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             <br />
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXX
           </p>
           <p>
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXX
             <br />
             XXXXXXXXXXXXXXXXXXXXXX
           </p>
@@ -127,7 +141,7 @@ const TopBlock = () => {
             XXXXXXXXXXX
           </p>
           <p>
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXX
           </p>
         </IntroPassage>
       </Intro>
