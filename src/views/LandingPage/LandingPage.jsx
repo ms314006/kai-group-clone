@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import FixedLink from '../../components/FixedLink';
 import TopBlock from '../../components/TopBlock';
 import PlasticToPaper from '../../components/PlasticToPaper';
 import GenderFreeDesign from '../../components/GenderFreeDesign';
@@ -27,6 +28,7 @@ const LandingPage = () => {
 
   return (
     <Body>
+      <FixedLink />
       <TopBlock />
       <PlasticToPaper />
       <GenderFreeDesign />
